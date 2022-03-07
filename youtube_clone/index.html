@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/yt_logo.png" type="image/x-icon">
+
+    <title>YT_Clone</title>
+</head>
+
+<body>
+    <div class="nav_top">
+        <nav class="top_nav">
+            <i class="fas fa-bars hamburger-icon" id="hamburger-icon"></i>
+            <h1 class="logo_text"><a href=""><i class="fab fa-youtube"></i>YouTube</a></h1>
+            <ul id="nav_links">
+                <li class="nav_top_links"><img src="/img/yt_logo_small.png" alt=""></li>
+                <li class="nav_top_links"><input type="search" name="top_nav_searchbar" id="search_bar"><button
+                        class="searchbtn" id="searchbtn">Search</button></li>
+                <li class="nav_top_links icon_gang"><i class="fas fa-microphone icon_gang"></i></li>
+                <li class="nav_top_links icon_gang"><i class="fas fa-video"></i></li>
+                <li class="nav_top_links icon_gang"><i class="fas fa-th"></i></li>
+                <li class="nav_top_links icon_gang"><i class="fas fa-bell"></i></li>
+                <li class="nav_top_links signup_btn"><i class="fas fa-user-circle"></i>SignUp</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="two_section-container section_split">
+        <div id="sidenav_section" class="sidenav_section">
+            <div class="side_nav side_nav_section_one">
+                <a href="#"><i class="fas fa-home side_nav_icons"></i>Home</a>
+                <a href="#"><i class="far fa-compass side_nav_icons"></i>Explore</a>
+                <a href="#"><i class="fas fa-heart side_nav_icons"></i>Subscription</a>
+            </div>
+            <div class="side_nav side_nav_section_two">
+                <a href="#"><i class="fas fa-photo-video side_nav_icons"></i>Library</a>
+                <a href="#"><i class="fas fa-history side_nav_icons"></i>History</a>
+            </div>
+            <div class="side_nav side_nav_section_three">
+                <p class="side_nav_section_text">History of YouTube</p>
+                <a href="#"><i class="fas fa-music side_nav_icons"></i>Music</a>
+                <a href="#"><i class="far fa-compass side_nav_icons"></i>Sports</a>
+                <a href="#"><i class="fas fa-heart side_nav_icons"></i>Gaming</a>
+                <a href="#"><i class="fas fa-film side_nav_icons"></i>Movies</a>
+                <a href="#"><i class="fas fa-newspaper side_nav_icons"></i>News</a>
+                <a href="#"><i class="fas fa-headset side_nav_icons"></i>Live</a>
+                <a href="#"><i class="fas fa-paint-brush side_nav_icons"></i>Fashion&Beauty</a>
+                <a href="#"><i class="far fa-lightbulb side_nav_icons"></i>Learning</a>
+                <a href="#"><i class="fas fa-eye side_nav_icons"></i>Spotlight</a>
+                <a href="#"><i class="fas fa-vr-cardboard side_nav_icons"></i>360° Videos</a>
+            </div>
+            <div class="side_nav side_nav_section_four">
+                <a href="#"><i class="fas fa-plus-circle"></i><span class="side_nav_browse_text"> Browse
+                        Channels</span></a>
+
+            </div>
+            <div class="side_nav side_nav_section_five">
+                <p class="side_nav_section_text">More from YouTube</p>
+                <a href="#"><i class="fab fa-youtube side_nav_icons"></i>YouTube Premium</a>
+                <a href="#"><i class="fas fa-headset side_nav_icons"></i>Live</a>
+            </div>
+            <div class="side_nav side_nav_section_five">
+                <a href="#"><i class="fas fa-cog side_nav_icons"></i>Setting</a>
+                <a href="#"><i class="fas fa-flag side_nav_icons"></i>Report History</a>
+                <a href="#"><i class="fas fa-question-circle side_nav_icons"></i>Help</a>
+                <a href="#"><i class="fas fa-comment-alt side_nav_icons"></i>Feedback</a>
+
+            </div>
+            <div class="side_nav">
+                <p class="side_nav_footer_para">About Press Copyright Contact us Creators Advertise Developers</p>
+                <p class="side_nav_footer_para">Terms Privacy Policy & Safety How YouTube worksTest new features</p>
+            </div>
+            <div class="side_nav side_nav_footer">
+                <p class="copyright">2021 _ Sabir Imtiyaz Shaikh</p>
+            </div>
+        </div>
+
+        <div class="video_card_section">
+            <div class="tag_section">
+                <p class="tags">All</p>
+                <p class="tags">Music</p>
+                <p class="tags">XXXTENTACION</p>
+                <p class="tags">Pop Music</p>
+                <p class="tags">Trailers</p>
+                <p class="tags">Movies</p>
+                <p class="tags">History</p>
+                <p class="tags">Horror</p>
+                <p class="tags">Shows</p>
+                <p class="tags">Exploring</p>
+                <p class="tags">News</p>
+            </div>
+            <div class="hero_banner">
+                <img src="/img/hero_banner.jpeg" alt="">
+                <div class="hero_banner_content">
+                    <img src="/img/yt_premium_banner_tagimg.png" alt="" class="hero_banner_tag_img">
+                    <h3 class="hero_bold_text">Watch everything you love without ads</h3>
+                    <button class="hero_banner_btn">GET IT NOW</button>
+                </div>
+            </div>
+            <h3 class="trending_para">SHOWING TRENDING TOP 50 IN INDIA : </h3>
+            <div class="video_card_container" id="video_card_container">
+<!-- 
+                <div class="video_render_cards">
+                    <img src="/img/card1_img.webp" alt="">
+                    <p class="video_card_title_render">MC Insane X Nazz - ONE A.M (Official Music Video) | Prod. By
+                        Refixmusic</p>
+                        <div class="video_datas">
+                        <img src="/img/card2_img.webp" alt="" class="channelThumbnail" id="channelThumbnail">
+                    <p class="channel_name_render">MC Insane</p></div>
+                    <span class="views_render_text">1</span>
+                    <span class="post_render_text">1</span>
+
+                </div>   -->
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom_nav">
+        <div class="bottom_links">
+            <a href="#home" class="active">
+                <i class="fas fa-home bottom_nav_icons"></i>
+                <p class="bottom_link_text">Home</p>
+            </a>
+        </div>
+        <div class="bottom_links">
+            <a href="#home" class="active">
+                <i class="fas fa-video bottom_nav_icons"></i>
+                <p class="bottom_link_text">Shorts</p>
+            </a>
+        </div>
+        <div class="bottom_links">
+            <a href="#home" class="active">
+                <i class="fas fa-plus-circle bottom_nav_icons create_icon" id="create_icon"></i>
+            </a>
+        </div>
+        <div class="bottom_links">
+            <a href="#home" class="active">
+                <i class="fas fa-heart bottom_nav_icons"></i>
+                <p class="bottom_link_text">Subscription</p>
+            </a>
+        </div>
+        <div class="bottom_links">
+            <a href="#home" class="active">
+                <i class="fas fa-photo-video bottom_nav_icons"></i>
+                <p class="bottom_link_text">Library</p>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer_section">
+        <span class="copyright_text">2021 CopyRights_ Cloned by</span>
+        <p class="cloner_name">Sabir imityaz shaikh</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script defer src="yt_Api.js"></script>
+</body>
+
+</html>
